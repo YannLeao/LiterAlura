@@ -9,7 +9,10 @@ import java.net.http.HttpResponse;
 public class ConsumeAPI {
 
     public String obtainData(String address) {
-        HttpClient client = HttpClient.newHttpClient();
+        HttpClient client = HttpClient.newBuilder()
+                .followRedirects(HttpClient.Redirect.ALWAYS)
+                .build();
+        ;
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(address))
                 .build();
