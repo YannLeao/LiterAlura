@@ -9,5 +9,5 @@ import java.util.List;
 public record DataBook(String title,
                        List<DataAuthor> authors,
                        List<String> languages,
-                       @JsonAlias("downloads_count") long downloads) {
+                       @JsonAlias("download_count") long downloads) {
 }

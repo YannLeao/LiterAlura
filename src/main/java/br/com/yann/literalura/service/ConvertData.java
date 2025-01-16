@@ -7,7 +7,11 @@ public class ConvertData implements IConvertData{
     private final ObjectMapper mapper = new ObjectMapper();
 
     @Override
-    public <T> T obtainData(String json, Class<T> object) throws JsonProcessingException {
-        return mapper.readValue(json, object);
+    public <T> T obtainData(String json, Class<T> object){
+        try {
+            return mapper.readValue(json, object);
+        } catch (JsonProcessingException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
