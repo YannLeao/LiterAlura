@@ -11,6 +11,7 @@ import java.util.List;
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
+        @Column(unique = true)
         private String name;
         private int birthYear;
         private int deathYear;
@@ -80,4 +81,10 @@ import java.util.List;
                 name, birthYear, deathYear, booksList.toString());
     }
 
+    public void addBook(Book book) {
+        books.add(book);
+        if (book.getAuthor() != this) {
+            book.setAuthor(this);
+        }
+    }
 }
