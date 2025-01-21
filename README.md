@@ -8,6 +8,14 @@
 ## Objetivos:
 > Desenvolver um Catálogo de Livros que oferece interação textual (via console) com os usuários, proporcionando pelo menos 5 opções de interação. O catálogo consulta uma API externa para buscar livros, e armazena e consulta os dados no banco de dados para exibir informações sobre livros e autores. O objetivo é manipular dados JSON e realizar operações de CRUD em um banco de dados relacional com o uso do Spring Data JPA.
 
+## Ferramentas Utilizadas:
+
+<div align="left">
+<a href="https://skillicons.dev">
+<img src="https://skillicons.dev/icons?i=spring,java,maven,postgres&perline=9" />
+</a>
+</div>
+
 ## API para busca de livros:
 Para realizar a busca de livros, foi utilizada a **Gutendex API**. O desafio consistiu em tratar os dados no formato JSON retornados pela API e utilizá-los de maneira eficiente, permitindo ao usuário consultar informações sobre livros e autores diretamente do banco de dados local.
 
