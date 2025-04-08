@@ -5,16 +5,17 @@
     <img width="30%" src="assets/badge_literalura.png" alt="Insígnia da conclusão do Challenge">
 </div>
 
-## Objetivos:
-> Desenvolver um Catálogo de Livros que oferece interação textual (via console) com os usuários, proporcionando pelo menos 5 opções de interação. O catálogo consulta uma API externa para buscar livros, e armazena e consulta os dados no banco de dados para exibir informações sobre livros e autores. O objetivo é manipular dados JSON e realizar operações de CRUD em um banco de dados relacional com o uso do Spring Data JPA.
-
-## Ferramentas Utilizadas:
+## Ferramentas utilizadas
 
 <div align="left">
-<a href="https://skillicons.dev">
-<img src="https://skillicons.dev/icons?i=spring,java,maven,postgres&perline=9" />
-</a>
+  <img src="https://img.shields.io/badge/Java-B07219.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot">
+  <img src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white" alt="Maven">
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
 </div>
+
+## Objetivos:
+> Desenvolver um Catálogo de Livros que oferece interação textual (via console) com os usuários, proporcionando pelo menos 5 opções de interação. O catálogo consulta uma API externa para buscar livros, e armazena e consulta os dados no banco de dados para exibir informações sobre livros e autores. O objetivo é manipular dados JSON e realizar operações de CRUD em um banco de dados relacional com o uso do Spring Data JPA.
 
 ## API para busca de livros:
 Para realizar a busca de livros, foi utilizada a **Gutendex API**. O desafio consistiu em tratar os dados no formato JSON retornados pela API e utilizá-los de maneira eficiente, permitindo ao usuário consultar informações sobre livros e autores diretamente do banco de dados local.
